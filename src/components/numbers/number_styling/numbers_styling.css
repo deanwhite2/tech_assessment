@@ -1,0 +1,50 @@
+.number {
+	/* changed styling for attractiveness  */
+	/* changed colors to improve readability */
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em;
+	background-color: lightgrey;
+	margin: 0.5em;
+	cursor: pointer;
+	border-radius: 50%;
+	width: 3em;
+	height: 3em;
+	font-size: 1em;
+	text-align: center;
+	color: black;
+}
+
+.active {
+	/* made red weaker to be more attractive on the eye */
+	background-color: #ff3333;
+}
+
+/* added styling for input box */
+input[type="number"] {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em;
+	background-color: lightgrey;
+	margin: 0.5em;
+	cursor: text;
+	border-radius: 1.5em;
+	width: 6em;
+	height: 3em;
+	font-size: 1em;
+	text-align: center;
+	color: black;
+	border: 2px solid lightgrey;
+	outline: none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+	border-color: #66ff33;
+	-moz-box-shadow: 0 0 3px #66ff33;
+	-webkit-box-shadow: 0 0 3px #66ff33;
+	box-shadow: 0 0 3px #66ff33;
+}
